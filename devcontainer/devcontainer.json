@@ -1,0 +1,10 @@
+{
+    "name": "Next.js Dev Container",
+    "dockerFile": "Dockerfile",
+    "appPort": [3000],
+    "postCreateCommand": "npm install",
+    "forwardPorts": [3000],
+    "mounts": ["source=${localWorkspaceFolder},target=/app,type=bind"],
+    "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+  }
+// This configuration sets up a development container for a Next.js application. It specifies the Dockerfile to use, the ports to forward, and the extensions to install. The postCreateCommand installs the necessary npm packages after the container is created. The workspace folder is mounted to the /app directory in the container.  
